@@ -1,0 +1,512 @@
+%btn{
+    background-color: $secondary_color;
+    color: $primary_color;
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    font-weight: 900;
+    a{
+        color: $primary_color;
+    }
+}
+main{
+    animation: appear 1s linear;
+}
+.yoga_practice{
+    height: 80vh;
+    background-color: $primary_color;
+    .article{
+        .left{
+            // width: 50%;
+            h1{
+              font-size: 4rem;  
+              width: 70%;
+              font-weight: 900;
+              color: $secondary_color;
+            }
+            p{
+                font-size: 1.4rem;
+                line-height: 1.3;
+                margin: 2rem 0;
+                color: $secondary_color
+            }
+            .btn{
+                @extend %btn;
+                margin-right: 1.3rem;
+                transition: all 0.5s ease-in;
+                a{
+                    color: $primary_color;
+                    font-weight: 900;
+                }
+                &:hover{
+                    background-color: white;
+                }
+                &:hover a{
+                    color: $secondary_color;  
+                }
+            }
+        }
+        .right{
+            background: url(../media/hero.png) no-repeat;
+            height: 70vh;
+            // background-size: cover;
+            // width: 50%;
+        }
+    }
+}
+%heading{
+    .learn_about{
+        .line{
+            width: 3rem;
+            height: 0.2rem;
+            background-color: $primary_color;   
+        }
+        span{
+            font-size: 1.1rem;
+            margin: 0 0.6rem;
+        }
+    }
+    h2{
+        font-size: 3rem;
+        margin-top: 1rem;
+        font-weight: 900;
+        color: $secondary_color;
+    }
+}
+
+.welcome_yoga{
+    height: 70vh;
+    .article{
+        .left{
+            // width: 50%;
+            background: url(../media/about.png) no-repeat;
+            height: 60vh;
+        }
+        .right{
+            // width: 50%;
+            header{
+                @extend %heading;
+                p{
+                    margin-top: 1.5rem;
+                    font-size: 1.2rem;
+                    line-height: 1.2;
+                }
+                .btn{
+                    @extend %btn;
+                    margin-top: 1.7rem;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.yoga_health{
+    padding: 3rem 0;
+    header{
+        @extend %heading;
+        text-align: center;
+        .learn_about{
+            width: 13rem;
+            padding: 0 1rem;
+            margin: auto; 
+        }
+    }
+
+    .article{
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        .flex_23{
+            height: 15rem;
+            border-radius: 0.6rem;
+            border: 1px solid rgba(0, 0, 255, 0.137);
+            padding: 4rem 1rem;
+            margin-top: 4rem;
+            cursor: pointer;
+            transition: all 0.5s ease-in;
+            box-shadow: -1px -1px -3px rgba(255,255,255,0.5),
+                        1px 1px 3px rgba(0,0,0,0.5);
+            &:hover{
+                background-color: $secondary_color;
+            }
+            &:hover h3{
+                color: $primary_color;
+            }
+            &:hover p{
+                color: white;
+            }
+            
+        }
+        .bg_img{
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background-color: $primary_color;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $secondary_color;
+            margin: 1rem 0;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+
+    }
+}
+
+
+.our_classes{
+    padding: 5rem 0;
+    header{
+        @extend %heading;
+        text-align: center;
+        .learn_about{
+            width: 13rem;
+            padding: 0 1rem;
+            margin: auto; 
+        }
+    }
+    .buttons{
+        width: 45%;
+        margin: 3rem auto;
+        .btn{
+            @extend %btn;
+            text-align: center;
+            margin-right: 1.3rem;
+        }
+    }
+
+
+    .list_items{
+        flex-wrap: wrap;
+        .flex_28{
+            box-shadow: -1px -1px -3px rgba(255,255,255,0.9),
+                            1px 1px 3px rgba(0,0,0,0.5);
+            border: 1px solid rgba(128, 128, 128, 0.356);
+            border-radius: 0.5rem;
+            padding-bottom: 2rem;
+            margin-top: 4rem;
+            
+            .image{
+                background: url(../media/class-1.jpg) no-repeat;
+                height: 27vh;
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+
+            .image2{
+                background: url(../media/class-2.jpg);
+            }
+
+            .image3{
+                background: url(../media/class-3.jpg);
+            }
+
+            .image4{
+                background: url(../media/class-4.jpg);
+            }
+            .image5{
+                background: url(../media/class-5.jpg);
+            }
+            .image6{
+                background: url(../media/class-6.jpg);
+            }
+            .account{
+                width: 80%;
+                margin: auto;
+                border: 1px solid rgba(128, 128, 128, 0.37);
+                border-radius: 2rem;
+                padding: 0.3rem 1rem;
+                position: relative;
+                margin-top: -2rem;
+                background-color: white;
+                img{
+                    border-radius: 50%;
+                    background-color: $primary_color;
+                }
+                h4{
+                    margin-left: 1rem;
+                }
+                i{
+                    border-radius: 50%;
+                    background-color: $primary_color;
+                    padding: 0.5rem;
+                }
+            }
+            h3{
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                font-weight: 900;
+                margin-left: 1rem;
+            }
+            span{
+                margin-left: 1rem;
+                display: block;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    
+}
+
+.background_image{
+    background: url(../media/yoga_cove.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    margin-top: 5rem;
+    img{
+        z-index: 9999;
+    }
+}
+
+.yoga_trainer{
+    padding: 5rem 0;
+    header{
+        @extend %heading;
+        text-align: center;
+        .learn_about{
+            width: 13rem;
+            padding: 0 1rem;
+            margin: auto; 
+        }
+    }
+    .list_items{
+        .flex_22{
+            text-align: center;
+            margin-top: 2rem;
+            line-height: 1.5;
+            
+            .image{
+                background: url(../media/team-1.jpg) no-repeat;
+                height: 38vh;
+                z-index: -5;
+                border-radius: 1.8rem;
+                position: relative;
+            }
+            .image2{
+                background: url(../media/team-2.jpg) no-repeat;
+            }
+            .image3{
+                background: url(../media/team-3.jpg) no-repeat;
+            }
+            .image4{
+                background: url(../media/team-4.jpg) no-repeat;
+            }
+            h3{
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+            .icons{
+                .each_icon{
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+.header{
+    .bars{
+        display: none;
+    }
+    .cross{
+        display: none;
+    }
+    input{
+        width: 0;
+    }
+}
+
+// -----------------------------------------
+@media screen and (max-width: 768px) {
+   html{
+       font-size: 12px;
+   }
+   .header{
+       li{
+           a{
+               font-size: 1.2rem;
+           }
+       }
+   }
+   .yoga_practice{
+       height: 60vh;
+   }
+   .header{
+       .nav{
+           input{
+               width: 0;
+           }
+           .bars{
+                font-size: 1.5rem;
+                color: white;
+                display: block;
+                margin-top: 1.5rem;
+           }
+           .cross{
+               position: absolute;
+               right: 3.5rem;
+               top: 1.5rem;
+               font-size: 1.8rem;
+               display: block;
+           }
+           ul{
+               display: none;
+           }
+           #toggle:checked ~ ul{
+               display: block;
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: $primary_color;
+               z-index: 9999;
+           }
+           li{
+               position: relative;
+               top: 30%;
+               left: 43%;
+               margin-top: 2rem;
+               font-size: 2rem;
+               a{
+                   color: black;
+               }
+           }
+       }
+   }
+   .container{
+       width: 90% !important;
+   }
+   .mini_container{
+       width: 90%;
+   }
+   .flex_45{
+       flex: 0 1 100%;
+   }
+   .full_width{
+        width: 90%;
+   }
+
+   .flex_23{
+       flex: 0 1 48%;
+   }
+   .flex_22{
+        flex: 0 1 48%;
+    }
+    .flex_28{
+        flex: 0 1 49%;
+    }
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
+   .column{
+       flex-direction: column;
+   }
+   .welcome_yoga{
+       margin-top: 3rem;
+   }
+   .yoga_health{
+       margin-top: 3rem;
+   }
+   .our_classes{
+       padding: 1rem 0;
+       .buttons{
+           width: 70%;
+        //    border: 1px solid green;
+           .btn{
+                margin: 1.1rem;
+           }
+       }
+   }
+   .background_image{
+       img{
+           width: 50%;
+           margin-top: -14rem;
+           z-index: -99;
+        //    display: none;
+       }
+   }
+
+   .yoga_trainer{
+        margin-top: 50rem ;
+       z-index: 99;
+   }
+  
+}
+
+
+// ----------------------------------------------
+
+@media screen and (max-width: 520px) {
+    html{
+        font-size: 10px;
+    }
+    .yoga_practice{
+        h1{
+            font-size: 1rem;
+        }
+    }
+    .flex_22, .flex_23, .flex_28, .flex_45{
+        flex: 0 1 100%;
+    }
+    footer{
+        .mini_container{
+            img{
+                width: 40%;
+            }
+        }
+    }
+    .welcome_yoga{
+        display: none;
+
+        .left{
+            width: 100%;
+            display: none;
+            
+        }.right{
+            width: 100%;
+        }
+    }
+    .yoga_health{
+        margin-top: 5rem;
+    }
+    .our_classes{
+        .buttons{
+            display: none;
+        }
+    }
+    .background_image{
+        img{
+            margin-top: -20rem;
+            margin-bottom: -60rem;
+        }
+    }
+
+    .yoga_trainer{
+        .list_items{
+            article{
+                margin: auto;
+                .image{
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+

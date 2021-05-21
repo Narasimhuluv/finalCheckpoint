@@ -1,0 +1,736 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'KoHo', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background-color: #343148;
+  padding: 0.6rem 0;
+}
+
+.header h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+
+.header a {
+  font-weight: 600;
+  color: white;
+  padding: 0.6rem 1.3rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.header a:hover {
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+.mini_container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex_23 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  border: 1px solid red;
+}
+
+.flex_22 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23%;
+          flex: 0 1 23%;
+}
+
+.flex_28 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 28%;
+          flex: 0 1 28%;
+}
+
+.flex_45 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
+.justify_between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify_center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.yoga_practice .article .left .btn, .welcome_yoga .article .right header .btn, .our_classes .buttons .btn {
+  background-color: #343148;
+  color: #f7cac9;
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  font-weight: 900;
+}
+
+.yoga_practice .article .left .btn a, .welcome_yoga .article .right header .btn a, .our_classes .buttons .btn a {
+  color: #f7cac9;
+}
+
+main {
+  -webkit-animation: appear 1s linear;
+          animation: appear 1s linear;
+}
+
+.yoga_practice {
+  height: 80vh;
+  background-color: #f7cac9;
+}
+
+.yoga_practice .article .left h1 {
+  font-size: 4rem;
+  width: 70%;
+  font-weight: 900;
+  color: #343148;
+}
+
+.yoga_practice .article .left p {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin: 2rem 0;
+  color: #343148;
+}
+
+.yoga_practice .article .left .btn {
+  margin-right: 1.3rem;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.yoga_practice .article .left .btn a {
+  color: #f7cac9;
+  font-weight: 900;
+}
+
+.yoga_practice .article .left .btn:hover {
+  background-color: white;
+}
+
+.yoga_practice .article .left .btn:hover a {
+  color: #343148;
+}
+
+.yoga_practice .article .right {
+  background: url(../media/hero.png) no-repeat;
+  height: 70vh;
+}
+
+.welcome_yoga .article .right header .learn_about .line, .yoga_health header .learn_about .line, .our_classes header .learn_about .line, .yoga_trainer header .learn_about .line {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #f7cac9;
+}
+
+.welcome_yoga .article .right header .learn_about span, .yoga_health header .learn_about span, .our_classes header .learn_about span, .yoga_trainer header .learn_about span {
+  font-size: 1.1rem;
+  margin: 0 0.6rem;
+}
+
+.welcome_yoga .article .right header h2, .yoga_health header h2, .our_classes header h2, .yoga_trainer header h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: 900;
+  color: #343148;
+}
+
+.welcome_yoga {
+  height: 70vh;
+}
+
+.welcome_yoga .article .left {
+  background: url(../media/about.png) no-repeat;
+  height: 60vh;
+}
+
+.welcome_yoga .article .right header p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.welcome_yoga .article .right header .btn {
+  margin-top: 1.7rem;
+}
+
+.yoga_health {
+  padding: 3rem 0;
+}
+
+.yoga_health header {
+  text-align: center;
+}
+
+.yoga_health header .learn_about {
+  width: 13rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.yoga_health .article {
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.yoga_health .article .flex_23 {
+  height: 15rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(0, 0, 255, 0.137);
+  padding: 4rem 1rem;
+  margin-top: 4rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-box-shadow: -1px -1px -3px rgba(255, 255, 255, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px -1px -3px rgba(255, 255, 255, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.yoga_health .article .flex_23:hover {
+  background-color: #343148;
+}
+
+.yoga_health .article .flex_23:hover h3 {
+  color: #f7cac9;
+}
+
+.yoga_health .article .flex_23:hover p {
+  color: white;
+}
+
+.yoga_health .article .bg_img {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #f7cac9;
+}
+
+.yoga_health .article .bg_img img {
+  width: 80px;
+  height: 80px;
+}
+
+.yoga_health .article h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #343148;
+  margin: 1rem 0;
+}
+
+.yoga_health .article p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.our_classes {
+  padding: 5rem 0;
+}
+
+.our_classes header {
+  text-align: center;
+}
+
+.our_classes header .learn_about {
+  width: 13rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.our_classes .buttons {
+  width: 45%;
+  margin: 3rem auto;
+}
+
+.our_classes .buttons .btn {
+  text-align: center;
+  margin-right: 1.3rem;
+}
+
+.our_classes .list_items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our_classes .list_items .flex_28 {
+  -webkit-box-shadow: -1px -1px -3px rgba(255, 255, 255, 0.9), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px -1px -3px rgba(255, 255, 255, 0.9), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.our_classes .list_items .flex_28 .image {
+  background: url(../media/class-1.jpg) no-repeat;
+  height: 27vh;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.our_classes .list_items .flex_28 .image2 {
+  background: url(../media/class-2.jpg);
+}
+
+.our_classes .list_items .flex_28 .image3 {
+  background: url(../media/class-3.jpg);
+}
+
+.our_classes .list_items .flex_28 .image4 {
+  background: url(../media/class-4.jpg);
+}
+
+.our_classes .list_items .flex_28 .image5 {
+  background: url(../media/class-5.jpg);
+}
+
+.our_classes .list_items .flex_28 .image6 {
+  background: url(../media/class-6.jpg);
+}
+
+.our_classes .list_items .flex_28 .account {
+  width: 80%;
+  margin: auto;
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  position: relative;
+  margin-top: -2rem;
+  background-color: white;
+}
+
+.our_classes .list_items .flex_28 .account img {
+  border-radius: 50%;
+  background-color: #f7cac9;
+}
+
+.our_classes .list_items .flex_28 .account h4 {
+  margin-left: 1rem;
+}
+
+.our_classes .list_items .flex_28 .account i {
+  border-radius: 50%;
+  background-color: #f7cac9;
+  padding: 0.5rem;
+}
+
+.our_classes .list_items .flex_28 h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-left: 1rem;
+}
+
+.our_classes .list_items .flex_28 span {
+  margin-left: 1rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.background_image {
+  background: url(../media/yoga_cove.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 70vh;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.background_image img {
+  z-index: 9999;
+}
+
+.yoga_trainer {
+  padding: 5rem 0;
+}
+
+.yoga_trainer header {
+  text-align: center;
+}
+
+.yoga_trainer header .learn_about {
+  width: 13rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.yoga_trainer .list_items .flex_22 {
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.yoga_trainer .list_items .flex_22 .image {
+  background: url(../media/team-1.jpg) no-repeat;
+  height: 38vh;
+  z-index: -5;
+  border-radius: 1.8rem;
+  position: relative;
+}
+
+.yoga_trainer .list_items .flex_22 .image2 {
+  background: url(../media/team-2.jpg) no-repeat;
+}
+
+.yoga_trainer .list_items .flex_22 .image3 {
+  background: url(../media/team-3.jpg) no-repeat;
+}
+
+.yoga_trainer .list_items .flex_22 .image4 {
+  background: url(../media/team-4.jpg) no-repeat;
+}
+
+.yoga_trainer .list_items .flex_22 h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.yoga_trainer .list_items .flex_22 .icons .each_icon {
+  position: absolute;
+}
+
+.header .bars {
+  display: none;
+}
+
+.header .cross {
+  display: none;
+}
+
+.header input {
+  width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .header li a {
+    font-size: 1.2rem;
+  }
+  .yoga_practice {
+    height: 60vh;
+  }
+  .header .nav input {
+    width: 0;
+  }
+  .header .nav .bars {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    margin-top: 1.5rem;
+  }
+  .header .nav .cross {
+    position: absolute;
+    right: 3.5rem;
+    top: 1.5rem;
+    font-size: 1.8rem;
+    display: block;
+  }
+  .header .nav ul {
+    display: none;
+  }
+  .header .nav #toggle:checked ~ ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7cac9;
+    z-index: 9999;
+  }
+  .header .nav li {
+    position: relative;
+    top: 30%;
+    left: 43%;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .header .nav li a {
+    color: black;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .mini_container {
+    width: 90%;
+  }
+  .flex_45 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .full_width {
+    width: 90%;
+  }
+  .flex_23 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+  .flex_22 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+  .flex_28 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+  .flex_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .welcome_yoga {
+    margin-top: 3rem;
+  }
+  .yoga_health {
+    margin-top: 3rem;
+  }
+  .our_classes {
+    padding: 1rem 0;
+  }
+  .our_classes .buttons {
+    width: 70%;
+  }
+  .our_classes .buttons .btn {
+    margin: 1.1rem;
+  }
+  .background_image img {
+    width: 50%;
+    margin-top: -14rem;
+    z-index: -99;
+  }
+  .yoga_trainer {
+    margin-top: 50rem;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 10px;
+  }
+  .yoga_practice h1 {
+    font-size: 1rem;
+  }
+  .flex_22, .flex_23, .flex_28, .flex_45 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  footer .mini_container img {
+    width: 40%;
+  }
+  .welcome_yoga {
+    display: none;
+  }
+  .welcome_yoga .left {
+    width: 100%;
+    display: none;
+  }
+  .welcome_yoga .right {
+    width: 100%;
+  }
+  .yoga_health {
+    margin-top: 5rem;
+  }
+  .our_classes .buttons {
+    display: none;
+  }
+  .background_image img {
+    margin-top: -20rem;
+    margin-bottom: -60rem;
+  }
+  .yoga_trainer .list_items article {
+    margin: auto;
+  }
+  .yoga_trainer .list_items article .image {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+footer {
+  background-color: #343148;
+}
+
+footer .mini_container {
+  position: relative;
+}
+
+footer .mini_container img {
+  display: block;
+  margin: auto;
+  opacity: 10%;
+}
+
+footer .mini_container address {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  color: white;
+  line-height: 1.8;
+}
+
+footer .mini_container address h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+footer .mini_container address h3 {
+  font-size: 1.3rem;
+}
+
+footer .mini_container address .list_icons a {
+  color: white;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.aboutUs {
+  width: 100%;
+  height: 40vh;
+  background-color: #f7cac9;
+}
+
+.aboutUs .content {
+  text-align: center;
+}
+
+.aboutUs .content h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #343148;
+}
+
+.aboutUs .content a {
+  font-size: 1.4rem;
+  color: black;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  margin-top: 1rem;
+  font-weight: 900;
+  margin: 0.5 0.5rem;
+}
+
+.aboutUs .content a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome_yoga {
+    margin: -15rem 0;
+  }
+  .yoga_trainer {
+    margin: -18rem 0;
+  }
+  footer {
+    margin-top: 20rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

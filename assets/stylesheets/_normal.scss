@@ -1,0 +1,40 @@
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    // border: 1px solid grey;
+}
+.mini_container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    // border: 1px solid grey;
+}
+.flex{
+    display: flex;
+}
+.flex_23{
+    flex: 0 1 25%;
+    border:1px solid red;
+}
+.flex_22{   
+    flex: 0 1 23%;
+}
+.flex_28{
+    flex: 0 1 28%;
+}
+.flex_45{
+    flex: 0 1 45%;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.justify_center{
+    justify-content: center;
+}
+.align_center{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}

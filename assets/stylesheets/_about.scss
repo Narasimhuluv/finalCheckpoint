@@ -1,0 +1,38 @@
+.aboutUs{
+    width: 100%;
+    height: 40vh;
+    background-color: $primary_color;
+    .content{
+        text-align: center;
+        h2{
+            font-size: 4rem;
+            font-weight: 900;
+            color: $secondary_color;
+        }
+        a{
+            font-size: 1.4rem;
+            color: black;
+            display: inline-block;
+            transition: all 0.5s ease-in;
+            margin-top: 1rem;
+            font-weight: 900;
+            margin: 0.5 0.5rem
+            ;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .welcome_yoga{
+        margin: -15rem 0;
+    }
+    .yoga_trainer{
+        margin: -18rem 0;
+    }
+    footer{
+        margin-top: 20rem ;
+    }
+}
